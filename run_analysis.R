@@ -57,7 +57,7 @@ names(tidy_data)<-gsub("\\.+", "", names(tidy_data))
 final <- tidy_data %>%
     group_by(subject, activity) %>%
     summarise_all(mean)
-write.csv(final, "tidy.csv")
+write.table(final, "tidy.txt", row.name = FALSE)
 
 
 

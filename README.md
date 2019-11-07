@@ -30,7 +30,7 @@ You should create one R script called run_analysis.R that does the following.
 
 ## Repository
 1. [run_analysis.R](run_analysis.R) : R script to download and tidy the raw data set.
-2. [tidy.csv](tidy.csv) : the tidy data set created by run_analysis.R
+2. [tidy.txt](tidy.txt) : the tidy data set created by run_analysis.R
 3. [CodeBook.md](CodeBook.md) : the code book describing variables in Tidy.txt
 4. [README.md](README.md) : the summary of the solution
 
@@ -122,5 +122,5 @@ Step 5: From the data set in step 4, creates a second, independent tidy data set
 final <- tidy_data %>%
     group_by(subject, activity) %>%
     summarise_all(mean)
-write.csv(final, "tidy.csv")
+write.table(final, "tidy.txt", row.name = FALSE)
 ```
