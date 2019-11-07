@@ -30,7 +30,7 @@ You should create one R script called run_analysis.R that does the following.
 
 ## Repository
 1. [run_analysis.R](run_analysis.R) : R script to download and tidy the raw data set.
-2. [Tidy.txt](Tidy.txt) : the tidy data set created by run_analysis.R
+2. [tidy.csv](tidy.csv) : the tidy data set created by run_analysis.R
 3. [CodeBook.md](CodeBook.md) : the code book describing variables in Tidy.txt
 4. [README.md](README.md) : the summary of the solution
 

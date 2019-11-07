@@ -1,4 +1,4 @@
-# Tidy.txt code book
+# tidy.csv code book
 Original data as described on https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
 * subject - anonymous subject identifier for the study paricipants, from subject_test.txt and subject_train.txt.
@@ -9,8 +9,8 @@ Original data as described on https://d396qusza40orc.cloudfront.net/getdata%2Fpr
 	* SITTING
 	* STANDING
 	* LAYING
-* Mean in a variable indicates mean value for the feature over all trials for the given subject doing the given activity in the current observation. Decimal values normalized between -1 and 1 in the original data.
-* STD in a variable indicates std value for the feature over all trials for the given subject doing the given activity in the current observation. Decimal values normalized between -1 and 1 in the original data.
+* The remaining variables contain average of each variable for each activity and each subject. The description of how they have been collected are in the original data set - features.info.
+* Mean indicates for mean value, STD for standard deviation. All values are normalized between -1 and 1.
 
 ## The list of all the variables
 1. subject
