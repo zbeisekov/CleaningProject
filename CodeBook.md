@@ -1,14 +1,14 @@
 # Tidy.txt code book
 Original data as described on https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
-* subject - Anonymous subject identifier for the study paricipants, from subject_test.txt and subject_train.txt.
-* activity - an activity being measured in current observations
-*1. WALKING
-*2. WALKING_UPSTAIRS
-*3. WALKING_DOWNSTAIRS
-*4. SITTING
-*5. STANDING
-*6. LAYING
+* subject - anonymous subject identifier for the study paricipants, from subject_test.txt and subject_train.txt.
+* activity - an activity being measured in current observations:
+** WALKING
+** WALKING_UPSTAIRS
+** WALKING_DOWNSTAIRS
+** SITTING
+** STANDING
+** LAYING
 * Mean in a variable indicates mean value for the feature over all trials for the given subject doing the given activity in the current observation. Decimal values normalized between -1 and 1 in the original data.
 * STD in a variable indicates std value for the feature over all trials for the given subject doing the given activity in the current observation. Decimal values normalized between -1 and 1 in the original data.
 
