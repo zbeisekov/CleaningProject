@@ -64,14 +64,19 @@ if (!file.exists("UCI HAR Dataset")) {
 At this point you should have the raw data set downloaded to your working directory. It is safe to rerun the script, because no unnecessary operations will happen.
 
 ### Reading raw data
-At this stage we read all the raw data, so we can tidy it up in the next steps.
+Reading features and activities, so we can use them as column names in the future.
 ```
-# Properly reading all the raw data
 features <- read.table("UCI HAR Dataset/features.txt", col.names = c("n","functions"))
 activities <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
+```
+Reading test data.
+```
 subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
 x_test <- read.table("UCI HAR Dataset/test/X_test.txt", col.names = features$functions)
 y_test <- read.table("UCI HAR Dataset/test/y_test.txt", col.names = "code")
+```
+Reading train data.
+```
 subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt", col.names = "subject")
 x_train <- read.table("UCI HAR Dataset/train/X_train.txt", col.names = features$functions)
 y_train <- read.table("UCI HAR Dataset/train/y_train.txt", col.names = "code")
