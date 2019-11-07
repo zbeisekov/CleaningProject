@@ -122,5 +122,5 @@ Step 5: From the data set in step 4, creates a second, independent tidy data set
 final <- tidy_data %>%
     group_by(subject, activity) %>%
     summarise_all(mean)
-write.table(final, "Tidy.txt", row.name=FALSE)
+write.csv(final, "tidy.csv")
 ```
