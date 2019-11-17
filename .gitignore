@@ -2,3 +2,5 @@
 Coursera_DS3_Final.zip
 UCI HAR Dataset/
 *.swp
+.RData
+.Rhistory
